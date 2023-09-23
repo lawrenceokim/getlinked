@@ -854,14 +854,14 @@ function Button({
   );
 }
 
-function Star({ name = "white" }) {
-  return (
-    <div class="item">
-      <img
-        src={`./star-${name}.png`}
-        alt="star"
-        class="w-full h-auto loader-pulse"
-      />
-    </div>
-  );
-}
+// function Star({ name = "white" }) {
+//   return (
+//     <div class="item">
+//       <img
+//         src={`./star-${name}.png`}
+//         alt="star"
+//         class="w-full h-auto loader-pulse"
+//       />
+//     </div>
+//   );
+// }
