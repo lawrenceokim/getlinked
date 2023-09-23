@@ -1,9 +1,12 @@
-import { useEffect, useMemo, useState } from "react";
 import "./App.css";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { HiLocationMarker } from "react-icons/hi";
+import { RiTwitterXFill, RiFacebookFill, RiLinkedinFill } from "react-icons/ri";
 
 function App() {
   return (
-    <div className="bg-primary h-screen w-screen text-white overflow-y-scroll overflow-x-hidden">
+    <div className="bg-primary mx-auto h-screen w-screen text-white overflow-y-scroll overflow-x-hidden">
       <Navbar />
       <Header />
       <Introduction />
@@ -13,6 +16,8 @@ function App() {
       <Timeline />
       <PrizesReward />
       <PartnersSponsors />
+      <PrivacyTerms />
+      <Footer />
     </div>
   );
 }
@@ -21,7 +26,7 @@ export default App;
 
 function Navbar() {
   return (
-    <section className="flex items-center justify-between py-5 px-20 border-b-[2px] border-b-pink/10">
+    <section className="flex items-center justify-between py-5 px-20 border-b-[2px] border-b-pink/10 max-w-7xl mx-auto">
       <p className="text-4xl font-bold cursor-pointer">
         get<span className="text-pink">linked</span>
       </p>
@@ -40,7 +45,7 @@ function Navbar() {
 
 function Header() {
   return (
-    <section className="relative flex flex-col pt-20 min-h-max border-b-[2px] border-b-pink/10">
+    <section className="relative flex flex-col pt-20 min-h-max border-b-[2px] border-b-pink/10  max-w-7xl mx-auto">
       <h3 className="text-right mr-14 font-serrat italic text-3xl font-bold">
         Igniting a Revolution in HR{" "}
         <span className="relative">
@@ -62,7 +67,7 @@ function Header() {
             <span className="relative text-pink">
               1.0
               <img
-                src="./chain-9365116-7621444.png"
+                src="./chain.png"
                 alt="chain"
                 className="absolute w-full h-auto -right-[100%] top-0"
               />
@@ -91,7 +96,7 @@ function Header() {
             className="w-full h-auto z-[1] globe"
           />
           <img
-            src="./man-wearing-smart-glasses-touching-virtual-screen 1.png"
+            src="./main-figure.png"
             alt="man-wearing-smart-glasses-touching-virtual-screen"
             className="absolute w-full h-auto bottom-0"
           />
@@ -103,7 +108,7 @@ function Header() {
 
 function Introduction() {
   return (
-    <section className="flex gap-5 py-16 mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
+    <section className="flex gap-5 py-16  items-center justify-center w-full border-b-[2px] border-b-pink/10  max-w-7xl mx-auto">
       <div className="flex items-center justify-center w-1/2 ">
         <img
           src="./the big idea 1.png"
@@ -132,7 +137,7 @@ function Introduction() {
 
 function RulesGuidelines() {
   return (
-    <section className="flex gap-5 py-16 mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
+    <section className="flex gap-5 py-16  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
       <div className="flex flex-col text-left items-start justify-center w-1/2 ">
         <h5 className="font-bold text-3xl mb-4 ml-20">
           Rules and
@@ -161,7 +166,7 @@ function RulesGuidelines() {
 
 function JudgingCriteria() {
   return (
-    <section className="flex gap-5 py-16 mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
+    <section className="flex gap-5 py-16  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
       <div className="flex items-center justify-center w-1/2 ">
         <img
           src="./8046554 1.png"
@@ -220,7 +225,7 @@ function JudgingCriteria() {
 
 function FAQs() {
   return (
-    <section className="flex gap-5 py-16 px-20 mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
+    <section className="flex gap-5 py-16 px-20  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
       <div className="flex flex-col text-left items-start justify-center w-[50%] ">
         <h5 className="font-bold text-3xl mb-4">
           Frequently Ask
@@ -285,7 +290,7 @@ function FAQs() {
 
 function Timeline() {
   return (
-    <section className="flex gap-5 py-16 px-20 mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
+    <section className="flex gap-5 py-16 px-20  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
       <div className="flex flex-col justify-center items-center w-1/2">
         <h1 className="text-center font-bold text-[32px] mb-2">Timeline</h1>
         <p className="text-center">
@@ -299,7 +304,7 @@ function Timeline() {
 
 function PrizesReward() {
   return (
-    <section className="flex flex-col gap-5 py-16 mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
+    <section className="flex flex-col gap-5 py-16  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
       <div className="flex flex-col w-[30%] ml-[30%]">
         <h5 className="font-bold text-3xl text-left">
           Prizes and
@@ -354,7 +359,7 @@ function PrizesReward() {
 
 function PartnersSponsors() {
   return (
-    <section className="flex flex-col gap-5 py-16 px-20 mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
+    <section className="flex flex-col gap-5 py-16 px-20  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
       <div className="flex flex-col justify-center items-center w-[50%]">
         <h1 className="text-center font-bold text-[32px] mb-2">
           Partners and Sponsors
@@ -365,46 +370,53 @@ function PartnersSponsors() {
         </p>
       </div>
       <div className="mt-[65px] w-full border border-pink rounded-lg flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center py-[5%] max-w-max">
-          <div className="flex gap-14 w-full">
-            <div className="w-[100%] p-[5%] border-b-[3px] border-b-pink flex items-center justify-center">
+        <div className="flex flex-col gap-14 items-center justify-center py-[5%] max-w-max">
+          <div className="flex gap-[100px] w-full">
+            <div className="w-full relative p-1 flex items-center justify-center">
               <img
                 src="libertyassured.png"
                 alt="liberty assured company logo"
-                className="w-full h-auto"
+                className="w-[70%] h-auto"
               />
+              <div className="absolute w-[110%] border-b-[3px] border-b-pink -bottom-[20%]" />
+              <div className="absolute w-[50%] border-b-[3px] border-b-pink rotate-90 -right-[50%]" />
             </div>
-            <div className="w-[100%] p-[5%] border-b-[3px] border-b-pink flex items-center justify-center">
+            <div className="w-full relative p-1 flex items-center justify-center">
               <img
                 src="libertypay.png"
                 alt="liberty pay company logo"
                 className="w-full h-auto"
               />
+              <div className="absolute w-[120%] border-b-[3px] border-b-pink -bottom-[20%]" />
+              <div className="absolute w-[50%] border-b-[3px] border-b-pink rotate-90 -right-[50%]" />
             </div>
-            <div className="w-[100%] p-[5%] border-b-[3px] border-b-pink flex items-center justify-center">
+            <div className="w-full relative p-1 flex items-center justify-center">
               <img
                 src="winwise.png"
                 alt="winwise company logo"
-                className="w-full h-auto"
+                className="w-[70%] h-auto"
               />
+              <div className="absolute w-[110%] border-b-[3px] border-b-pink -bottom-[20%]" />
             </div>
           </div>
-          <div className="flex gap-14 w-full">
-            <div className="w-[100%] p-[3%] flex items-center justify-center">
+          <div className="flex gap-[100px] w-full">
+            <div className=" w-full relative p-2 flex items-center justify-center">
               <img
                 src="whispersms.png"
                 alt="whispersms company logo"
-                className="w-full h-auto"
+                className="w-[70%] h-auto"
               />
+              <div className="absolute w-[50%] border-b-[3px] border-b-pink rotate-90 -right-[48%]" />
             </div>
-            <div className="w-[100%] p-[3%] flex items-center justify-center">
+            <div className="w-full relative p-1 flex items-center justify-center">
               <img
                 src="paybox.png"
                 alt="paybox company logo"
                 className="w-full h-auto"
               />
+              <div className="absolute w-[50%] border-b-[3px] border-b-pink rotate-90 -right-[50%]" />
             </div>
-            <div className="w-[100%] p-[3%] flex items-center justify-center">
+            <div className="w-full relative p-1 flex items-center justify-center">
               <img
                 src="visualplus.png"
                 alt="visualplus company logo"
@@ -418,9 +430,149 @@ function PartnersSponsors() {
   );
 }
 
+function PrivacyTerms() {
+  return (
+    <section className="flex gap-10 py-16 pl-20  max-w-7xl mx-auto w-full">
+      <div className="flex flex-col text-left items-start justify-center w-[50%] ">
+        <h5 className="font-bold text-3xl mb-4">
+          Privacy Policy and
+          <br />
+          <span className="text-pink">Terms</span>
+        </h5>
+        <p className="font-normal text-sm">
+          Last updated on September 12, 2023
+        </p>
+        <p className="text-sm font-normal mt-10">
+          Below are our privacy & policy, which outline a lot of goodies. it’s
+          our aim to always take of our participant
+        </p>
+        <div className="mt-[65px] w-full border border-pink rounded-lg flex flex-col items-start justify-center p-9">
+          <p>
+            At getlinked tech Hackathon 1.0, we value your privacy and are
+            committed to protecting your personal information. This Privacy
+            Policy outlines how we collect, use, disclose, and safeguard your
+            data when you participate in our tech hackathon event. By
+            participating in our event, you consent to the practices described
+            in this policy.
+          </p>
+          <h6 className="text-pink font-bold text-base mt-10">
+            Licensing Policy
+          </h6>
+          <p className="font-bold text-sm mt-2">
+            Here are terms of our Standard License:
+          </p>
+          <div className="flex items-start gap-4 mt-9">
+            <img src="list terms.svg" alt="check" />
+            <p>
+              The Standard License grants you a non-exclusive right to navigate
+              and register for our event
+            </p>
+          </div>
+          <div className="flex items-start gap-4 mt-9">
+            <img src="list terms.svg" alt="check" />
+            <p>
+              You are licensed to use the item available at any free source
+              sites, for your project developement
+            </p>
+          </div>
+          <Button
+            padx={40}
+            margintop={30}
+            maxW={300}
+            flex={"flex"}
+            center={"center"}
+          >
+            Read More
+          </Button>
+        </div>
+      </div>
+      <div className="flex flex-col w-[50%] p-10 pb-0">
+        <img
+          src="./shield.png"
+          alt="shield outline"
+          className="w-full h-auto"
+        />
+        <img
+          src="./padlock.png"
+          alt="padlock"
+          className="w-full h-auto -mt-[90%]"
+        />
+      </div>
+    </section>
+  );
+}
+
+function Footer() {
+  return (
+    <section className="flex flex-col gap-10 py-16 pl-20  max-w-7xl mx-auto w-full bg-[#100B20]">
+      <div className="flex w-full gap-10 items-start justify-between">
+        <div className="flex flex-col w-1/2">
+          <h5 className="font-bold text-3xl mb-1">
+            get
+            <span className="text-pink">linked</span>
+          </h5>
+          <p className="font-normal text-xs mt-3">
+            Getlinked Tech Hackathon is a technology innovation program
+            established by a group of organization with the aim of showing young
+            and talented individuals in the field of technology
+          </p>
+          <p className="flex font-normal text-xs mt-20 items-end">
+            Terms of Use<span className="mx-2 text-pink text-[18px]">|</span>
+            Privacy Policy
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 w-1/4">
+          <h3 className="text-pink font-semibold text-sm">Useful Links</h3>
+          <ul className="flex flex-col gap-3">
+            <li className="cursor-pointer text-sm font-normal">Overview</li>
+            <li className="cursor-pointer text-sm font-normal">Timeline</li>
+            <li className="cursor-pointer text-sm font-normal">FAQs</li>
+            <li className="cursor-pointer text-sm font-normal">Register</li>
+          </ul>
+          <p className="flex items-center gap-5 text-pink font-normal text-xs">
+            Follow us
+            <span className="flex items-center gap-3 text-white text-2xl">
+              <AiOutlineInstagram className="cursor-pointer" />
+              <RiTwitterXFill className="cursor-pointer" />
+              <RiFacebookFill className="cursor-pointer" />
+              <RiLinkedinFill className="cursor-pointer" />
+            </span>
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 w-1/4 mr-5">
+          <h3 className="text-pink font-semibold text-sm">Contact Us</h3>
+          <div className="flex items-center gap-5">
+            <BsFillTelephoneFill />
+            <a href="tel:+234 6707653444" className=" text-sm font-normal">
+              +234 6707653444
+            </a>
+          </div>
+          <div className="flex items-start gap-5">
+            <HiLocationMarker className="text-2xl" />
+            <p className=" text-sm font-normal">
+              27,Alara Street Yaba 100012 Lagos State
+            </p>
+          </div>
+        </div>
+      </div>
+      <p className="flex items-center justify-center text-xs font-normal">
+        All rights reserved. © getlinked Ltd.
+      </p>
+    </section>
+  );
+}
+
 //////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
-function Button({ children, padx = 56, pady = 16, margintop = 0, maxW }) {
+function Button({
+  children,
+  padx = 56,
+  pady = 16,
+  margintop = 0,
+  maxW,
+  flex,
+  center,
+}) {
   const style = {
     paddingRight: `${padx}px`,
     paddingLeft: `${padx}px`,
@@ -428,10 +580,12 @@ function Button({ children, padx = 56, pady = 16, margintop = 0, maxW }) {
     paddingBottom: `${pady}px`,
     marginTop: `${margintop}px`,
     maxWidth: `${maxW}px`,
+    display: flex,
+    alignSelf: center,
   };
   return (
     <button
-      className="bg-gradient-to-r from-pink to-purple rounded-md"
+      className="bg-gradient-to-r from-red to-purple rounded-md"
       style={style}
     >
       {children}
