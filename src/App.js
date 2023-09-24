@@ -144,7 +144,7 @@ function Contact() {
 
 function Header() {
   return (
-    <section className="relative flex flex-col xs:px-4 md:px-2 md:pt-20 xs:pt-5 min-h-max border-b-[2px] border-b-pink/10  max-w-7xl mx-auto">
+    <section className="relative flex flex-col xs:px-4 md:px-2 md:pt-16 xs:pt-5 min-h-max border-b-[2px] border-b-pink/10  max-w-7xl mx-auto">
       <h3 className="md:text-right text-center md:mr-14 font-serrat italic md:text-3xl font-bold">
         Igniting a Revolution in HR{" "}
         <span className="relative">
@@ -158,9 +158,17 @@ function Header() {
       </h3>
 
       <div className="md:mt-10 flex md:flex-row xs:flex-col md:justify-center w-full">
-        <div className="md:w-1/2 w-full flex flex-col xs:items-center md:ml-20 mt-10">
+        <div className="md:w-1/2 w-full flex flex-col xs:items-center md:ml-20 md:mt-[100px] xs:mt-16">
           <h3 className="md:text-[75px] xs:text-2xl xs:text-center md:text-3xl md:text-left font-bold xs:w-[60%] md:w-full">
-            getlinked <span>Tech</span>
+            getlinked{" "}
+            <span className="relative">
+              Tech
+              <img
+                src="./Creative 1.png"
+                alt="bulb light"
+                className="absolute md:-top-[90%] md:right-10 xs:-top-[100%] xs:right-5 xs:w-[40%]"
+              />
+            </span>
           </h3>
           <h3 className="md:text-[75px] xs:text-2xl xs:text-center md:text-3xl md:text-left font-bold xs:w-[60%] md:w-full md:mt-14">
             Hackathon
@@ -188,7 +196,17 @@ function Header() {
               Register
             </Button>
           </div>
-
+          <div className="flex gap-5 mt-4 md:mt-[77px] justify-center md:justify-start w-full">
+            <p className="font-normal text-5xl md:text-6xl font-unica">
+              00<span className="text-base">H</span>
+            </p>
+            <p className="font-normal text-5xl md:text-6xl font-unica">
+              00<span className="text-base">M</span>
+            </p>
+            <p className="font-normal text-5xl md:text-6xl font-unica">
+              00<span className="text-base">S</span>
+            </p>
+          </div>
           {/* <SetLogoutTimer /> */}
         </div>
 
@@ -205,13 +223,25 @@ function Header() {
           />
         </div>
       </div>
+      <div className="absolute">
+        <Star />
+      </div>
+      <div className="absolute top-[20%] left-1/2">
+        <Star />
+      </div>
+      <div className="absolute bottom-[5%] left-[40%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute top-[10%] right-[5%]">
+        <Star name="gray" />
+      </div>
     </section>
   );
 }
 
 function Introduction() {
   return (
-    <section className="md:flex xs:flex-col md:flex-row xs:px-4 md:px-0 gap-5 py-16  items-center justify-center w-full border-b-[2px] border-b-pink/10  max-w-7xl mx-auto">
+    <section className="md:flex xs:flex-col md:flex-row xs:px-4 md:px-0 gap-5 py-16  items-center justify-center w-full border-b-[2px] border-b-pink/10  max-w-7xl mx-auto relative">
       <div className="flex items-center justify-center md:w-1/2 ">
         <img
           src="./the big idea 1.png"
@@ -234,13 +264,19 @@ function Introduction() {
           change the world, that's what we're all about!
         </p>
       </div>
+      <div className="absolute top-[10%] left-[10%]">
+        <Star />
+      </div>
+      <div className="absolute top-[30%] right-[10%]">
+        <Star name="purple" />
+      </div>
     </section>
   );
 }
 
 function RulesGuidelines() {
   return (
-    <section className="flex gap-5 py-16  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 xs:flex-col-reverse md:flex-row xs:px-4 md:px-0">
+    <section className="flex gap-5 py-16  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 xs:flex-col-reverse md:flex-row xs:px-4 md:px-0 relative">
       <div className="flex flex-col md:text-left md:items-start justify-center md:w-1/2 ">
         <h5 className="font-bold text-3xl mb-4 md:ml-20 xs:text-center">
           Rules and
@@ -263,13 +299,19 @@ function RulesGuidelines() {
           className="md:max-w-1/2 xs:w-full h-auto"
         />
       </div>
+      <div className="absolute top-[20%] left-[30%]">
+        <Star name="gray" />
+      </div>
+      <div className="absolute bottom-[30%] right-[50%]">
+        <Star />
+      </div>
     </section>
   );
 }
 
 function JudgingCriteria() {
   return (
-    <section className="md:flex gap-5 py-16 xs:flex-col-reverse md:flex-row max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 xs:px-4">
+    <section className="md:flex gap-5 py-16 xs:flex-col-reverse md:flex-row max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 xs:px-4 relative">
       <div className="flex items-center justify-center md:w-1/2 xs:w-full ">
         <img
           src="./8046554 1.png"
@@ -324,13 +366,22 @@ function JudgingCriteria() {
           </Button>
         </div>
       </div>
+      <div className="absolute top-[20%] left-[40%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute bottom-[30%] right-[50%]">
+        <Star name="gray" />
+      </div>
+      <div className="absolute bottom-[10%] right-[10%]">
+        <Star />
+      </div>
     </section>
   );
 }
 
 function FAQs() {
   return (
-    <section className="flex xs:flex-col md:flex-row gap-5 py-16 md:px-20 xs:px-4 max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
+    <section className="flex xs:flex-col md:flex-row gap-5 py-16 md:px-20 xs:px-4 max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 relative">
       <div className="flex flex-col xs:text-center md:text-left xs:items-center md:items-start justify-center md:w-[50%] xs:w-full">
         <h5 className="font-bold xs:text-center md:text-left text-3xl mb-4 md:w-[50%] xs:w-full">
           Frequently Ask
@@ -388,13 +439,22 @@ function FAQs() {
           className="max-w-1/2 h-auto"
         />
       </div>
+      <div className="absolute top-[20%] left-[40%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute bottom-[30%] right-[50%]">
+        <Star name="gray" />
+      </div>
+      <div className="absolute bottom-[10%] right-[10%]">
+        <Star />
+      </div>
     </section>
   );
 }
 
 function Timeline() {
   return (
-    <section className="flex gap-5 py-16 xs:px-4 md:px-20  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 font-serrat">
+    <section className="flex gap-5 py-16 xs:px-4 md:px-20  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 font-serrat relative">
       <div className="flex flex-col items-center">
         <h1 className="text-lg text-center font-bold md:text-[32px] mb-2">
           Timeline
@@ -550,13 +610,22 @@ function Timeline() {
           </div>
         </div>
       </div>
+      <div className="absolute top-[20%] left-[20%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute top-[50%] right-[10%]">
+        <Star />
+      </div>
+      <div className="absolute bottom-[10%] left-[10%]">
+        <Star name="gray" />
+      </div>
     </section>
   );
 }
 
 function PrizesReward() {
   return (
-    <section className="flex flex-col gap-5 py-16  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 xs:px-4 md:px-0">
+    <section className="flex flex-col gap-5 py-16  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 xs:px-4 md:px-0 relative">
       <div className="flex flex-col xs:w-50% md:w-[30%] xs:mx-auto md:mx-0 md:ml-[30%]">
         <h5 className="font-bold text-3xl xs:text-center md:text-left">
           Prizes and
@@ -610,13 +679,22 @@ function PrizesReward() {
           </div>
         </div>
       </div>
+      <div className="absolute top-[20%] left-[20%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute top-[50%] right-[10%]">
+        <Star />
+      </div>
+      <div className="absolute bottom-[10%] left-[10%]">
+        <Star name="gray" />
+      </div>
     </section>
   );
 }
 
 function PartnersSponsors() {
   return (
-    <section className="flex flex-col gap-5 py-16 xs:px-4 md:px-20  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10">
+    <section className="flex flex-col gap-5 py-16 xs:px-4 md:px-20  max-w-7xl mx-auto items-center justify-center w-full border-b-[2px] border-b-pink/10 relative">
       <div className="flex flex-col justify-center items-center xs:w-[80%] md:w-[50%]">
         <h1 className="text-center font-bold text-[32px] mb-2">
           Partners and Sponsors
@@ -684,13 +762,25 @@ function PartnersSponsors() {
           </div>
         </div>
       </div>
+      <div className="absolute top-[20%] left-[20%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute top-[50%] right-[10%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute bottom-[10%] left-[10%]">
+        <Star name="gray" />
+      </div>
+      <div className="absolute bottom-[10%] right-[5%]">
+        <Star />
+      </div>
     </section>
   );
 }
 
 function PrivacyTerms() {
   return (
-    <section className="flex xs:flex-col xs:items-center md:flex-row gap-10 py-16 md:pl-20  max-w-7xl mx-auto w-full xs:px-4 md:px-0">
+    <section className="flex xs:flex-col xs:items-center md:flex-row gap-10 py-16 md:pl-20  max-w-7xl mx-auto w-full xs:px-4 md:px-0 relative">
       <div className="flex flex-col text-left xs:items-center md:items-start justify-center md:w-[50%] xs:w-full">
         <h5 className="font-bold text-3xl mb-4 xs:text-center md:text-left">
           Privacy Policy and
@@ -756,13 +846,25 @@ function PrivacyTerms() {
           className="w-full h-auto -mt-[90%]"
         />
       </div>
+      <div className="absolute top-[20%] left-[20%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute top-[50%] right-[10%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute bottom-[10%] left-[10%]">
+        <Star name="gray" />
+      </div>
+      <div className="absolute bottom-[10%] right-[5%]">
+        <Star />
+      </div>
     </section>
   );
 }
 
 function Footer() {
   return (
-    <section className="flex flex-col gap-10 py-16 pl-20  max-w-7xl mx-auto w-full bg-[#100B20] xs:px-4 md:px-0">
+    <section className="flex flex-col gap-10 py-16 pl-20  max-w-7xl mx-auto w-full bg-[#100B20] xs:px-4 md:px-0 relative">
       <div className="flex xs:flex-col md:flex-row w-full gap-10 xs:items-center md:items-start justify-between">
         <div className="flex flex-col md:w-1/2 xs:w-3/4 md:pl-20">
           <h5 className="font-bold text-3xl mb-1">
@@ -816,6 +918,18 @@ function Footer() {
       <p className="flex items-center justify-center text-xs font-normal">
         All rights reserved. © getlinked Ltd.
       </p>
+      <div className="absolute top-[20%] left-[20%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute top-[50%] right-[10%]">
+        <Star name="purple" />
+      </div>
+      <div className="absolute bottom-[10%] left-[10%]">
+        <Star name="gray" />
+      </div>
+      <div className="absolute bottom-[10%] right-[5%]">
+        <Star />
+      </div>
     </section>
   );
 }
@@ -830,7 +944,6 @@ function Button({
   maxW,
   flex,
   center,
-  xs,
   onClick,
 }) {
   const style = {
@@ -854,14 +967,12 @@ function Button({
   );
 }
 
-// function Star({ name = "white" }) {
-//   return (
-//     <div class="item">
-//       <img
-//         src={`./star-${name}.png`}
-//         alt="star"
-//         class="w-full h-auto loader-pulse"
-//       />
-//     </div>
-//   );
-// }
+function Star({ name = "white" }) {
+  return (
+    <img
+      src={`./star-${name}.png`}
+      alt="star"
+      class="xs:w-[30%] md:w-full h-auto loader-pulse"
+    />
+  );
+}

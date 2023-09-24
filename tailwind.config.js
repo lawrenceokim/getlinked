@@ -24,6 +24,7 @@ module.exports = {
         serif: ["Merriweather", "serif"],
         mono: ["ui-monospace", "SFMono-Regular"],
         serrat: [" Montserrat", "sans-serif"],
+        unica: ["Unica One", "cursive"],
       },
     },
   },
